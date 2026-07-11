@@ -1,3 +1,58 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+@source "../../storage/framework/views/*.php";
+@source "../**/*.blade.php";
+@source "../**/*.js";
+
+@theme {
+    --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-primary-50: #eaf4fc;
+    --color-primary-100: #d7e8f7;
+    --color-primary-500: #2367ab;
+    --color-primary-600: #1d5a97;
+    --color-primary-700: #174d83;
+    --color-ink-900: #1f2937;
+    --color-ink-600: #64748b;
+    --color-stroke-200: #e2e8f0;
+    --radius-5xl: 2.5rem;
+}
+
+@layer base {
+    [x-cloak] {
+        display: none !important;
+    }
+
+    body {
+        @apply bg-white text-slate-900 antialiased;
+    }
+
+    ::selection {
+        background-color: color-mix(in srgb, var(--color-primary-500) 18%, white);
+    }
+}
+
+@layer components {
+    .public-shell {
+        @apply min-h-screen bg-white;
+    }
+
+    .public-container {
+        @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    }
+
+    .public-card {
+        @apply rounded-[10px] border border-[--color-stroke-200] bg-white;
+    }
+
+    .public-section {
+        @apply py-16 sm:py-20;
+    }
+
+    .public-eyebrow {
+        @apply inline-flex items-center gap-2 rounded-full bg-primary-50 px-[16px] py-[10px] text-xs font-semibold text-primary-700;
+    }
+}

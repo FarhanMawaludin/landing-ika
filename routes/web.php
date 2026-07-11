@@ -3,9 +3,12 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'pages.home.index')->name('home');
+Route::view('/berita', 'pages.news.index')->name('news.index');
+Route::view('/agenda', 'pages.agenda.index')->name('agenda.index');
+Route::view('/struktur', 'pages.organization.index')->name('organization.index');
+Route::view('/galeri', 'pages.gallery.index')->name('gallery.index');
+Route::view('/aspirasi', 'pages.aspiration.index')->name('aspiration.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
