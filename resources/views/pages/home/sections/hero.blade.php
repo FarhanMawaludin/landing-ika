@@ -1,4 +1,4 @@
-<section class="pt-8 pb-12 sm:pt-10 sm:pb-16">
+<section class="pt-6 pb-10 sm:pt-8 sm:pb-14 lg:pt-10 lg:pb-16">
     <div class="public-container">
         <div class="relative overflow-hidden rounded-[10px] border border-slate-200 bg-slate-900">
             <div
@@ -8,23 +8,23 @@
             ></div>
             <div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/45 to-slate-950/20"></div>
 
-            <div class="relative grid min-h-[620px] items-end gap-8 p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_352px] lg:p-10">
+            <div class="relative grid min-h-[560px] items-end gap-6 p-5 sm:min-h-[620px] sm:p-8 lg:grid-cols-[minmax(0,1fr)_352px] lg:gap-8 lg:p-10">
                 <div class="max-w-2xl">
-                    <span class="inline-flex items-center gap-2 rounded-[10px] bg-white/14 px-4 py-2 text-xs font-semibold tracking-[0.16em] text-white uppercase backdrop-blur-sm">
+                    <span class="inline-flex max-w-max items-center gap-2 whitespace-nowrap rounded-[10px] bg-white/14 px-[14px] py-[10px] text-[11px] font-semibold tracking-[0.12em] text-white uppercase backdrop-blur-sm sm:text-xs sm:tracking-[0.16em]">
                         <i class="ph ph-users-three text-sm" aria-hidden="true"></i>
                         SATU ALMAMATER, SATU KELUARGA
                     </span>
 
-                    <h1 class="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[48px] lg:leading-[1.12]">
+                    <h1 class="mt-5 text-[28px] leading-[1.18] font-semibold tracking-tight text-white sm:mt-6 sm:text-4xl lg:text-[48px] lg:leading-[1.12]">
                         Langkah Kecil Setiap Alumni,<br>
                         Dampak Besar untuk Almamater
                     </h1>
 
-                    <p class="mt-5 max-w-xl text-base leading-7 text-blue-50/90 sm:text-lg">
+                    <p class="mt-4 max-w-xl text-[15px] leading-7 text-blue-50/90 sm:mt-5 sm:text-base lg:text-lg">
                         Menyambungkan setiap alumni dalam jejaring silaturahmi, kolaborasi, dan pengabdian yang berkelanjutan.
                     </p>
 
-                    <div class="mt-8">
+                    <div class="mt-6 sm:mt-8">
                         <x-public.primary-button href="#tentang-kami" icon="ph ph-arrow-right">
                             Tentang IKA
                         </x-public.primary-button>

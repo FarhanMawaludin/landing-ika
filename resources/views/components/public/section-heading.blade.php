@@ -17,12 +17,12 @@
         </span>
     @endif
 
-    <h2 class="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+    <h2 class="mt-4 text-[28px] leading-[1.15] font-semibold tracking-tight text-slate-900 sm:text-[34px] lg:text-[40px]">
         {{ $title }}
     </h2>
 
     @if ($description)
-        <p class="mt-4 text-base leading-7 text-slate-500 sm:text-lg">
+        <p class="mt-4 text-[15px] leading-7 text-slate-500 sm:text-base lg:text-lg">
             {{ $description }}
         </p>
     @endif

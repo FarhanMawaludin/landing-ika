@@ -11,15 +11,15 @@
 
 <nav x-data="{ open: false }" class="sticky top-0 z-50 border-b border-slate-200/90 bg-white/95 backdrop-blur-sm">
     <div class="public-container">
-        <div class="flex h-20 items-center justify-between gap-6">
+        <div class="flex h-[72px] items-center justify-between gap-4 sm:h-20 sm:gap-6">
             <a href="{{ route('home') }}" class="flex items-center gap-3" aria-label="IKA SMAN 1 CIRUAS">
-                <x-application-logo class="h-10 w-auto shrink-0" />
+                <x-application-logo class="h-9 w-auto shrink-0 sm:h-10" />
 
                 <span class="min-w-0">
-                    <span class="block truncate text-sm font-semibold tracking-[0.02em] text-slate-900 sm:text-base">
+                    <span class="block truncate text-[13px] font-semibold tracking-[0.02em] text-slate-900 sm:text-base">
                         IKA SMAN 1 CIRUAS
                     </span>
-                    <span class="block truncate text-xs text-slate-500">
+                    <span class="block truncate text-[11px] text-slate-500 sm:text-xs">
                         Ikatan Keluarga Alumni
                     </span>
                 </span>
